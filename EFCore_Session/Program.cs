@@ -33,6 +33,7 @@ namespace EFCore_Session
 
             if (lazy) options.UseLazyLoadingProxies();
 
+
             options.EnableSensitiveDataLogging();
             using var db = new Context(options.Options);
             //await db.Database.EnsureDeletedAsync(); //Delete => de mosebaaaaaaaaaaa
